@@ -9,6 +9,7 @@ from streamlit_chat import message
 import pandas as pd
 from langchain.agents import create_pandas_dataframe_agent
 from langchain.chat_models import ChatOpenAI
+import matplotlib.pyplot as plt
 import matplotlib
 import seaborn as sns
 
