@@ -23,8 +23,7 @@ agent = create_pandas_dataframe_agent(llm, df, verbose = True, max_iterations = 
 # Setup streamlit app
 # Display the page title and the text box for the user to ask questions
 st.title('😺 Query data ')
-placeholder = st.empty()
-prompt = placeholder.text_input("Enter a question to query the PDF document", key = 1)
+prompt = st.text_input("Enter a question to query the PDF document", key = 1)
 
 if prompt:
     # Get the resonse from LLM
@@ -34,4 +33,3 @@ if prompt:
 
     # Write the results from the LLM to the UI
     st.write("<b>" + prompt + "</b><br><i>" + response + "</i><hr>", unsafe_allow_html = True)
-    prompt = placeholder.text_input("Enter a question to query the PDF document", value = "", key = 2)
