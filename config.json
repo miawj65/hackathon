@@ -1,6 +1,6 @@
 {
  "openai":{
-   	"api_key": "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",
+   	"api_key": "API_KEY",
    	"model_id": "gpt-3.5-turbo"
  }
 }
